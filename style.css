@@ -1,0 +1,107 @@
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-grey: hsl(252, 6%, 83%);
+  --clr-grey: hsl(245, 15%, 58%);
+  --clr-dark-grey: hsl(245, 19%, 35%);
+  --clr-almost-black: hsl(248, 70%, 10%);
+  --clr-light-orange: hsl(7, 88%, 67%);
+  --clr-dark-orange: hsl(7, 71%, 60%);
+  --spacer: 0.9rem 0;
+}
+
+/* global and defaults*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: black;
+  font-family: 'Inconsolata', serif;
+  color: var(--clr-light-grey);
+  background-image: url(assets/images/pattern-lines.svg),
+    url(assets/images/background-mobile.png);
+  background-position: center, right 61%;
+  background-repeat: no-repeat, no-repeat;
+  /* min-height: 100dvh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin: var(--spacer);
+}
+
+input {
+  background-color: var(--clr-almost-black);
+  border: 1px solid var(--clr-light-grey);
+  border-radius: 12px;
+  padding: 15px;
+  color: var(--clr-light-grey);
+  font: inherit;
+}
+/* end of global and defaults */
+
+/* specific styles */
+.container {
+  min-height: 100dvh;
+  /* display: grid; */
+  place-items: center;
+  padding: 1rem;
+  margin-top: 25px;
+  background-image: 
+  url(assets/images/pattern-circle.svg),
+  url(assets/images/pattern-squiggly-line-top.svg),
+  url(assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center right -57px, top right, bottom left;
+  background-size: 30%, 30%, 40%;
+}
+.text-wrapper {
+  text-align: center;
+  /* text-wrap: balance; */
+  /* line-height: 1.5; */
+  margin: var(--spacer);
+}
+.page-title {
+  font-size: 35px;
+  margin: var(--spacer);
+}
+.page-paragraph {
+  font-size: 20px;
+  text-wrap: pretty;
+}
+.inputs {
+  width: 100%;
+  max-width: 400px;
+  display: grid;
+  gap: 5px;
+}
+
+#submit {
+  background-color: var(--clr-light-orange);
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  margin: var(--spacer);
+  color: var(--clr-almost-black);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.ticket{
+  margin-top: 50px;
+}
+
+/* end of specific styles */
+

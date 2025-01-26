@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <img src="assets/images/logo-full.svg" alt="" />
+      <div class="text-wrapper">
+        <h1 class="page-title">Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <p class="page-paragraph">
+          Secure your spot at next year's biggest coding conference.
+        </p>
+      </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+      <form method="get" action="confirmed.html" id="form" class="inputs">
+        <label for="avatar">Upload Avatar</label>
+        <input type="file" name="avatar" id="avatar" accept="image/*" />
+
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" />
+
+        <label for="github">GitHub Username</label>
+        <input type="text" name="github" id="github" />
+
+        <button id="submit">Generate My ticket</button>
+      </form>
+    </main>
+  </body>
+</html>
+
+<!-- Form starts
+
   
-  <title>Frontend Mentor | Conference ticket generator</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  <!-- Form starts -->
-
-  Your Journey to Coding Conf 2025 Starts Here!
-
-  Secure your spot at next year's biggest coding conference.
+  
 
   Upload Avatar
   Drag and drop or click to upload
@@ -36,22 +61,15 @@
 
   Generate My Ticket
 
-  <!-- Form ends -->
+  Form ends
 
-  <!-- Generated tickets starts -->
+  Generated tickets starts
 
-  Congrats, <!-- Full Name -->! Your ticket is ready.
+  
 
-  We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
+  
 
   Coding Conf
   Jan 31, 2025 / Austin, TX
 
-  <!-- Generated tickets ends -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-</html>
+  Generated tickets ends -->
